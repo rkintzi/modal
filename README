@@ -10,3 +10,7 @@ or as I prefer:
 itself. "modal" grabs all keyboard events and forward them to the embedded
 window. It also freezes pointer events. The effect is that you can not interact
 with other windows until the process exits.
+
+Install
+
+     $ make && sudo make install
