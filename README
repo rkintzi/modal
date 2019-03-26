@@ -1,0 +1,12 @@
+Run any program supporting XEMBED protocol in modal mode.
+
+Usage:
+    $ modal sh -c 'urxvt -embed $XEMBED'
+or as I prefer:
+    $ modal xembed -embed urxvt
+
+"modal" runs what provided on a command line. Before the program is started,
+"XEMBED" variable is set to window ID in which the program is supposed to embed
+itself. "modal" grabs all keyboard events and forward them to the embedded
+window. It also freezes pointer events. The effect is that you can not interact
+with other windows until the process exits.
